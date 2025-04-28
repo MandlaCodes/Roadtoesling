@@ -1,0 +1,405 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teach china</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <style>
+        .container{
+            margin-top:100px;
+        }
+            body {
+                background: linear-gradient(to right, #000000, #333333);
+            color: #fff;
+            text-align: center;}
+        .card:hover {
+            transform: scale(1.05);
+            transition: 0.3s;
+        }
+
+        .card{
+            background: linear-gradient(to right, #05ad97, #015d69);
+            color:black
+
+        }
+        .btn{
+            background-color: #3af7dd;
+            color: #000;
+        }
+                  
+        .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    background-color: #555;
+    position: fixed; /* Sticks navbar to the top */
+    top: 0; /* Ensures it stays at the very top */
+    left: 0;
+    width: 100%; /* Makes navbar full-width */
+    z-index: 1000; /* Keeps it above other content */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds shadow */
+}
+.col-md-4{
+    padding-left:30px;
+    padding-right:30px;
+}
+
+.previous-btn {
+    font-size: 1.2em;
+    color: black;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color:#3af7dd;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s;
+}
+
+.previous-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.previous-btn i {
+    margin-right: 8px;
+    color: #000; /* Space between the icon and text */
+}
+
+.header .logo img {
+    height: 70px; /* Adjust based on your logo size */
+    width:70px;
+    border-radius: 50px;
+
+}
+#twocard{
+   margin-bottom:100px;
+}
+.footer {
+            margin-top: 20px;
+            padding: 15px;
+            background: rgba(0, 0, 0, 0.8);
+        }
+
+        h4{
+            font-size: 30px;;
+        }
+        li{
+         text-decoration: none;
+        }
+        img {
+    width: 100%; /* Ensures images take up the full width of their container */
+    height: 300px; /* Set a fixed height for uniformity */
+    object-fit: cover; /* Ensures images fill the space without distortion */
+    border-radius: 400px; /* Optional: Adds rounded corners */
+}
+
+.application-process {
+    text-align: center;
+    padding: 40px 20px;
+}
+.application-heading {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+.cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+}
+.card {
+    color:white;
+   
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    flex: 1;
+    min-width: 250px;
+    max-width: 280px;
+}
+.card:hover {
+    transform: translateY(-5px);
+}
+.card img {
+    width: 100%;
+    border-radius: 8px;
+    max-height: 150px;
+    object-fit: cover;
+}
+.job-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 10px;
+}
+.job-links a {
+    background: #007bff;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: background 0.3s ease-in-out;
+}
+.job-links a:hover {
+    background: #0056b3;
+}
+
+h4{
+    font-size:50px;
+    margin-bottom:20px;
+}
+h1{
+    margin-bottom:30px;
+    
+} 
+@media (max-width: 767px) {
+  img{
+    margin-bottom:30px;
+    margin-top:30px;
+  }
+  ul{
+    padding-left:30px;
+    padding-right:30px;
+  }
+  .firstimg{
+    margin-top:80px;
+}
+
+}
+.divider {
+  margin-top: 70x;
+  border-bottom: 6px solid #3af7dd;; /* Golden line */
+  width: 50%; /* Make the line 50% of the page width */
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  margin-bottom:5px;
+}
+p{
+    font-size:18px;
+}
+
+
+.divider:before {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, rgba(243, 156, 18, 0) 0%, #3af7dd; 50%, rgba(243, 156, 18, 0) 100%);
+}
+ul{
+    font-size:20px;
+}
+  
+.first-para {
+  list-style: none; /* Remove default list bullets */
+
+}
+.job-linksss {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+
+.job-linksss a {
+    font-size: 16px;
+    color: #ffffff;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+.job-linksss a:hover {
+    color: #0056b3;
+}
+
+.job-linksss a:focus {
+    outline: none;
+    color: #004085;
+}
+
+   </style>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header" data-aos="fade-up" data-aos-delay="200" >
+        <!-- Back Button with Icon -->
+        <a href="index.html" class="previous-btn">
+            <i class="fas fa-arrow-left"></i> Back
+        </a>
+        <!-- Logo Section -->
+        <div class="logo">
+            <img src="images/WhatsApp Image 2025-02-22 at 05.59.37_33b255a3.jpg" alt="Logo">
+        </div>
+    </header>
+
+
+    <section class="about-us py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Left Column: Image -->
+                <div class="col-md-6">
+                    <img class="firstimg" src="images/pexels-aboodi-13884397.jpg" alt="MN Web Solutions"  rounded shadow-lg animate__animated animate__fadeIn" data-aos="fade-up" data-aos-delay="200">
+                </div>
+    
+                <!-- Right Column: Text -->
+                <div class="col-md-6 text-center text-md-start" data-aos="fade-up" data-aos-delay="200">
+                    
+                    <h1>Teaching English in China: Requirements, Process & Documents</h1>
+                    <h2> Basic Requirements:</h2>
+                    <ul class="first-para">
+                        <li>✅ Bachelor's degree (any field)</li>
+                        <li>✅ Be a native English speaker from America, Britain, Ireland, Australia ,Canada, New Zealand or South Africa (preferred)</li>
+                        <li>✅ Teaching experience</li>
+                        <li>✅ Clean criminal record</li>
+                        <li>✅ Good health </li>
+                        <li>✅ Be age 18-55 years old </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="divider"></div>
+    <section class="about-us py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Left Column: Image -->
+                <div class="col-md-6 text-center text-md-start" data-aos="fade-up" data-aos-delay="200">
+                    <h4> Necessary Documents:</h4>
+                    <ul class="first-para" data-aos="fade-up" data-aos-delay="300">
+                        <li>📜 Valid passport</li>
+                        <li>📜 Bachelor's degree certificate</li>
+                        <li>📜 TEFL/TESOL certificate or teaching license</li>
+                        <li>📜 Criminal background check</li>
+                        <li>📜 Medical examination report</li>
+                        <li>📜 Recommendation letters (if you have experience)</li>
+                    </ul>
+            
+                </div>
+                <!-- Right Column: Text -->
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <img src="images/pexels-pixabay-261679.jpg" alt="MN Web Solutions"  rounded shadow-lg animate__animated animate__fadeIn">
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="divider"></div>
+    <section class="application-process">
+        <h2 data-aos="fade-up" data-aos-delay="200" class="application-heading">
+         Application & Hiring Process:
+        </h2>
+        <div class="cards" data-aos="fade-up" data-aos-delay="400">
+            <div class="card">
+                <img src="images/pexels-photo-8112186.webp" alt="Job Search">
+                <h3>Step 1: Prepare Your Documents, Intro Video & Demo Lesson</h3>
+                <p>The first step in preparing to teach in China is gathering all the essential documents and preparing your video materials. Most schools and recruiters will require the following:</p>
+                <ul>
+                    <li>Updated CV/Resume – Tailored for ESL teaching positions</li>
+                    <li>Bachelor’s Degree Certificate – Apostilled (legalised for international use)</li>
+                    <li>TEFL/TESOL Certificate – Minimum 120-hour certificate, also apostilled</li>
+                    <li>Police Clearance Certificate (PCC) – From your home country, apostilled</li>
+                    <li>Valid Passport – At least 12 months before expiration</li>
+                    <li>Professional Reference Letters – Preferably from educational or related work experience</li>
+                </ul>
+              
+                <h3>Required Videos:</h3>
+                <ul>
+                    <li>Introduction Video – A short (1–2 minute) video introducing yourself. Be friendly, professional, and enthusiastic. Highlight your background, teaching style, and interest in working with students in China.</li>
+                    <li>Demo Lesson Video – A 3–5 minute recorded lesson showing how you would teach a simple concept (like greetings, colors, or vocabulary). Use props, gestures, and energy to engage young learners—even if it’s just to the camera!</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <img src="images/pexels-photo-5699475.webp" alt="Training">
+                <h3>Step 2: Apply and interview</h3>
+                <p> Start applying to schools, agencies and recruiters in China by sending your CV and videos.
+                     If selected, you’ll be invited for an online interview where you’ll discuss your teaching experience & answer their questions.</p>
+            </div>
+        
+            <div id="resp" class="card">
+                <img src="images/pexels-photo-955389.webp" alt="Sign Contract">
+                <h3>Step 3: Sign Contract & Send Documents</h3>
+                <ul>
+                    <li>Review the contract carefully—check salary, benefits, working hours, and visa details.</li>
+                    <li>Once contract is signed, send documents to school.</li>
+                </ul>
+            </div>
+        
+            <div class="card">
+                <img src="images/pexels-photo-7235900.jpeg" alt="Visa Application">
+                <h3>Step 4: Apply for a Work Visa</h3>
+                <p>- Your employer provides a Work Permit Notice from the Chinese government.</p>
+                <p>- Apply for your Z Visa at the Chinese embassy or consulate.</p>
+            </div>
+        
+            <div class="card">
+                <img src="images/pexels-photo-3760072.webp" alt="Arrive in China">
+                <h3>Step 5: Arrive & Finalize Documents</h3>
+                <p>Complete a medical check, register with local authorities, and obtain your Residence Permit.</p>
+            </div>
+        
+        
+    
+        </div>
+        
+    </section>
+
+    <div class="divider"></div>
+    <footer class="footer" >
+        <p>&copy; 2025 Road to Esling. All Rights Reserved.</p>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+    // Initialize AOS
+    AOS.init({
+        once: true,  // Ensure animations only happen once
+        duration: 1000,  // Set duration for animation
+        easing: 'ease-out', // Add easing for smooth effect
+    });
+</script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+ 
+ 

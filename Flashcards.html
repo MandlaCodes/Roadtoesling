@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Flashcards</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #000000, #333333);
+      color: #ffffff;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 60px 20px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.8rem;
+      color: #ffffff;
+      margin-bottom: 10px;
+    }
+
+    p.subheading {
+      text-align: center;
+      color: #ffffff;
+      font-size: 1.1rem;
+      margin-bottom: 50px;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 16px;
+      padding: 25px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.05);
+      transition: all 0.3s ease;
+      border: 1px solid #e6eaf0;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 24px rgba(0,0,0,0.08);
+    }
+
+    .card h2 {
+      font-size: 1.3rem;
+      color: #1a2c5b;
+      margin-bottom: 12px;
+    }
+
+    .card p {
+      font-size: 0.95rem;
+      color: #555;
+      margin-bottom: 18px;
+    }
+
+    .card a {
+      text-decoration: none;
+      color: #1f7aec;
+      font-weight: 600;
+      transition: color 0.2s ease;
+    }
+
+    .card a:hover {
+      color: #0048a8;
+    }
+
+    .download-all {
+      text-align: center;
+      margin-top: 60px;
+    }
+
+    .download-all a {
+      background: #1f7aec;
+      color: white;
+      text-decoration: none;
+      padding: 14px 28px;
+      border-radius: 50px;
+      font-size: 1rem;
+      font-weight: 600;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+      transition: background 0.3s ease;
+    }
+
+    .download-all a:hover {
+      background: #0048a8;
+    }
+    #head{
+   margin-top:100px;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    background-color: #555;
+    position: fixed; /* Sticks navbar to the top */
+    top: 0; /* Ensures it stays at the very top */
+    left: 0;
+    width: 100%; /* Makes navbar full-width */
+    z-index: 1000; /* Keeps it above other content */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds shadow */
+}
+.col-md-4{
+    padding-left:30px;
+    padding-right:30px;
+}
+
+.previous-btn {
+    font-size: 1.2em;
+    color: black;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color:#3af7dd;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s;
+}
+
+.previous-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.previous-btn i {
+    margin-right: 8px;
+    color: #000; /* Space between the icon and text */
+}
+
+.header .logo img {
+    height: 70px; /* Adjust based on your logo size */
+    width:70px;
+    border-radius: 50px;
+
+}
+.divider {
+  margin-bottom:50px;
+  border-bottom: 6px solid #3af7dd;; /* Golden line */
+  width: 50%; /* Make the line 50% of the page width */
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+  </style>
+</head>
+<body>
+
+
+    <header class="header" data-aos="fade-up" data-aos-delay="200" >
+        <!-- Back Button with Icon -->
+        <a href="index.html" class="previous-btn">
+            <i class="fas fa-arrow-left"></i> Back
+        </a>
+        <!-- Logo Section -->
+        <div class="logo">
+            <img src="images/WhatsApp Image 2025-02-22 at 05.59.37_33b255a3.jpg" alt="Logo">
+        </div>
+    </header> 
+
+  <div id="head" class="container">
+    <h1>🃏 Flashcards</h1>
+    <p class="subheading">Printable, fun, and educational flashcards designed to support early learning through visual play and repetition.</p>
+    <div class="divider"></div>
+
+    <div class="grid">
+      <div class="card">
+        <img src="images/Screenshot_20250428_180018_M365 Copilot.jpg" alt="Family Tree Craft" class="card-image">
+        <h2>🔠 Alphabet Flash Cards – Uppercase & Lowercase (A–Z)</h2>
+        <p>These printable flashcards are perfect for teaching letter recognition and supporting early literacy development. Each letter of the alphabet is featured on its own individual card, with uppercase and lowercase letters provided on separate cards. This allows for flexible use in games, matching activities, wall displays, or small group instruction.</p>
+        <ul>
+          <li>Great for reinforcing phonics, letter formation, and alphabet sequencing.</li>
+        </ul>
+        <p><strong>Includes:</strong></p>
+        <ul>
+          <li>26 Uppercase flashcards</li>
+          <li>26 Lowercase flashcards</li>
+        </ul>
+        <p><strong>Tip:</strong> Print, cut, and laminate for durability and reusability in the classroom or at home!</p>
+        <a href="downloads/Alphabet Matching English Flashcards Pink Green Frog Illustrative Style.pdf" download>Download Alphabet Flashcards</a>
+      </div>
+    
+      <div class="card">
+        <h2>📚 Phonics Flashcards A–Z</h2>
+        <img src="images/Screenshot_20250428_180023_M365 Copilot.jpg" alt="Family Tree Craft" class="card-image">
+        <p>These colourful and engaging flashcards are perfect for introducing or reinforcing letter-sound relationships for early learners. Each letter of the alphabet is paired with two phonic examples to strengthen recognition and sound association.</p>
+        <p><strong>Includes:</strong></p>
+        <ul>
+          <li>All 26 letters of the alphabet (Aa–Zz)</li>
+          <li>2 phonic words per letter (e.g., A – apple, ant | B – bus, ball)</li>
+          <li>Uppercase and lowercase letters for every card</li>
+          <li>Clear and vibrant images to support vocabulary development</li>
+        </ul>
+        <p><strong>Tip:</strong> Use these flashcards during circle time or in a phonics centre. Encourage learners to think of their own words that start with the same letter sound!</p>
+        <a href="downloads/Phonics Flashcards A-z.pdf" download>Download Phonics Flashcards</a>
+      </div>
+    
+      <div class="card">
+        <h2>🔢 Colourful Numbers Flashcards (1–35)</h2>
+        <img src="images/Screenshot_20250428_180028_M365 Copilot.jpg" alt="Family Tree Craft" class="card-image">
+        <p>These vibrant and visually appealing number flashcards are perfect for teaching early learners number recognition, counting, and basic math skills. Each card features a bold number (1–35) in bright colours, making it engaging and easy for children to recognize and remember.</p>
+        <p><strong>Tip:</strong> Use the flashcards in order for number sequencing or shuffle them for a fun memory-matching game!</p>
+        <a href="downloads/Numbers 1-35.pdf" download>Download Number Flashcards</a>
+      </div>
+    </div>
+    
+
+</body>
+</html>

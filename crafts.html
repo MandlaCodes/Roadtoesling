@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crafts</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+          .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    background-color: #555;
+    position: fixed; /* Sticks navbar to the top */
+    top: 0; /* Ensures it stays at the very top */
+    left: 0;
+    width: 100%; /* Makes navbar full-width */
+    z-index: 1000; /* Keeps it above other content */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds shadow */
+}
+.col-md-4{
+    padding-left:30px;
+    padding-right:30px;
+}
+
+.previous-btn {
+    font-size: 1.2em;
+    color: black;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color:#3af7dd;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s;
+}
+
+.previous-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.previous-btn i {
+    margin-right: 8px;
+    color: #000; /* Space between the icon and text */
+}
+
+.header .logo img {
+    height: 70px; /* Adjust based on your logo size */
+    width:70px;
+    border-radius: 50px;
+
+}
+#head{
+   margin-top:100px;
+}
+body {
+          font-family: 'Poppins', sans-serif;
+          margin: 0;
+          padding: 0;
+          background: linear-gradient(to right, #000000, #333333);
+          color: #333;
+        }
+    
+        .container {
+          max-width: 1200px;
+          margin: auto;
+          padding: 60px 20px;
+        }
+    
+        h1 {
+          text-align: center;
+          font-size: 2.8rem;
+          color: #ffffff;
+          margin-bottom: 10px;
+        }
+    
+        p.subheading {
+          text-align: center;
+          color: #ffffff;
+          font-size: 1.1rem;
+          margin-bottom: 50px;
+          max-width: 700px;
+          margin-left: auto;
+          margin-right: auto;
+        }
+    
+        .grid {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+          gap: 30px;
+        }
+    
+        .card {
+          background: #ffffff;
+          border-radius: 16px;
+          padding: 25px;
+          box-shadow: 0 6px 18px rgba(0,0,0,0.05);
+          transition: all 0.3s ease;
+          border: 1px solid #e6eaf0;
+        }
+    
+        .card:hover {
+          transform: translateY(-6px);
+          box-shadow: 0 12px 24px rgba(0,0,0,0.08);
+        }
+    
+        .card h2 {
+          font-size: 1.3rem;
+          color: #1a2c5b;
+          margin-bottom: 12px;
+        }
+    
+        .card p {
+          font-size: 0.95rem;
+          color: #555;
+          margin-bottom: 18px;
+        }
+    
+        .card a {
+          text-decoration: none;
+          color: #1f7aec;
+          font-weight: 600;
+          transition: color 0.2s ease;
+        }
+    
+        .card a:hover {
+          color: #0048a8;
+        }
+    
+        .download-all {
+          text-align: center;
+          margin-top: 60px;
+        }
+    
+        .download-all a {
+          background: #1f7aec;
+          color: white;
+          text-decoration: none;
+          padding: 14px 28px;
+          border-radius: 50px;
+          font-size: 1rem;
+          font-weight: 600;
+          box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+          transition: background 0.3s ease;
+        }
+    
+        .download-all a:hover {
+          background: #0048a8;
+        }
+        .divider {
+  margin-bottom:50px;
+  border-bottom: 6px solid #3af7dd;; /* Golden line */
+  width: 50%; /* Make the line 50% of the page width */
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+    </style>
+    
+</head>
+<body>
+    <header class="header" data-aos="fade-up" data-aos-delay="200" >
+        <!-- Back Button with Icon -->
+        <a href="index.html" class="previous-btn">
+            <i class="fas fa-arrow-left"></i> Back
+        </a>
+        <!-- Logo Section -->
+        <div class="logo">
+            <img src="images/WhatsApp Image 2025-02-22 at 05.59.37_33b255a3.jpg" alt="Logo">
+        </div>
+    </header> 
+    <body>
+    
+      <div id="head" class="container">
+        <h1>🎨 Crafts & Activities</h1>
+        <p class="subheading">Engaging, creative, and educational resources to inspire young minds — perfect for both classroom and home learning!</p>
+        <div class="divider"></div>
+        <div class="grid">
+          <div class="card">
+            <h2>🌳 Family Tree Craft Activity (Colour, Cut & Paste)</h2>
+            <img src="images/Screenshot_20250428_175857_M365 Copilot.jpg" alt="Family Tree Craft" class="card-image">
+            <p>This engaging, hands-on activity helps students explore and understand family relationships. The resource includes two pages:</p>
+            <ul>
+              <li><strong>Page 1:</strong> The Big Tree – A beautifully illustrated tree design that students can colour in to create a vibrant backdrop.</li>
+              <li><strong>Page 2:</strong> Family Leaves – Six individual green leaves labelled with family roles: Mom, Dad, Brother, Sister, Grandma, and Grandpa. Students can colour each leaf and then cut them out.</li>
+            </ul>
+            <p>After colouring, the students attach their personalised family member leaves to the tree, creating a unique, interactive family tree display. Perfect for reinforcing vocabulary and family member recognition, this activity is ideal for both classroom and home use.</p>
+            <p><strong>Tip:</strong> For younger learners, consider pre-cutting the leaves ahead of time to make the activity smoother and more accessible.</p>
+            <a href="downloads/family tree.pdf-3.pdf" download>Download PDF</a>
+          </div>
+        
+          <div class="card">
+            <h2>🔤 Alphabet Chart (Uppercase, Lowercase & Phonics Pictures)</h2>
+            <img src="images/Screenshot_20250428_175914_M365 Copilot.jpg" alt="Family Tree Craft" class="card-image">
+            <p>This printable alphabet chart is a great visual aid for introducing or reinforcing letters and their sounds.</p>
+            <ul>
+              <li>Each letter is shown in both uppercase and lowercase.</li>
+              <li>Includes a phonic image to help learners connect the letter with its beginning sound (e.g. A/a – apple).</li>
+            </ul>
+            <p><strong>Tip:</strong> Laminate the chart for long-lasting use!</p>
+            <a href="downloads/ABC Chart .pdf" download>Download PDF</a>
+          </div>
+        
+          <div class="card">
+            <h2>✏️ Alphabet Tracing Chart (Uppercase & Lowercase with Numbered Stroke Guides)</h2>
+            <img src="images/Screenshot_20250428_175920_M365 Copilot.jpg" alt="Family Tree Craft" class="card-image">
+            <p>This handwriting chart is designed to help young learners develop proper letter formation skills.</p>
+            <ul>
+              <li>Each letter of the alphabet is shown in both uppercase and lowercase.</li>
+              <li>Clear, numbered stroke directions for accurate tracing.</li>
+            </ul>
+            <p>Perfect for teaching handwriting, fine motor skills, and reinforcing letter recognition. Ideal for use in the classroom, ESL settings, or at home.</p>
+            <p><strong>Tip:</strong> Laminate the chart or place it in a dry-erase sleeve for repeated practice!</p>
+            <a href="downloads/ABC Tracing Chart.pdf" download>Download Tracing Chart</a>
+          </div>
+        
+          <div class="card">
+            <h2>🎨 Count and Colour Worksheet (1–5)</h2>
+            <img src="images/Screenshot_20250428_175932_M365 Copilot.jpg" alt="Family Tree Craft" class="card-image">
+            <p>This interactive worksheet helps young learners practice counting and colouring by matching numbers with quantities.</p>
+            <p><strong>Instructions for Students:</strong></p>
+            <ul>
+              <li>Look at the number at the top of each section.</li>
+              <li>Count the images below.</li>
+              <li>Colour only the correct amount that corresponds to the number (e.g., if the number is 3, colour only 3 images out of the 6 provided).</li>
+            </ul>
+            <p><strong>Tip:</strong> After completing the worksheet, ask students to count aloud the images they coloured to reinforce both number recognition and counting skills.</p>
+
+            <a href="downloads/Count and colour.pdf" download>Download Count & Colour</a>
+          </div>
+        
+          <div class="card">
+            <h2>🐷 "This Little Piggy" Phonics Craft</h2>
+            <img src="images/Screenshot_20250428_175952_M365 Copilot.jpg" alt="Family Tree Craft" class="card-image">
+            <p>This fun phonics craft helps young learners connect words and sounds while creating a visual project.</p>
+            <p><strong>Instructions for Students:</strong></p>
+            <ul>
+              <li>Colour the piggy cut-outs.</li>
+              <li>Match each piggy to a simple "This Little Piggy" phrase or phonics word.</li>
+              <li>Glue them onto a base sheet to create a fun scene.</li>
+            </ul>
+            <p><strong>Tip:</strong> Encourage students to act out the rhyme while showing their crafts to practice speaking and presentation skills!</p>
+            <a href="downloads/This little Piggy.pdf" download>Download Piggy Craft</a>
+          </div>
+        </div>
+        
+
+    </body>
+    </html>
+</body>
+</html>

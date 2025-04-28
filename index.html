@@ -1,0 +1,2058 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<!-- SITE TITLE -->
+	<title>Road to ESLING</title>
+
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+
+	<!-- STYLESHEET CSS FILES -->
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/animate.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+	<link rel="stylesheet" href="css/nivo-lightbox.css">
+	<link rel="stylesheet" href="css/nivo_themes/default/default.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+</head>
+<style>
+  .footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 15px 0;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.footer-links li a {
+  color: #fff; /* Change depending on your footer bg */
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-links li a:hover {
+  color: #ddd;
+}
+
+.footer-copy {
+  text-align: center;
+  margin-top: 10px;
+  color: #aaa;
+  font-size: 14px;
+}
+
+  body
+{
+
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	position: relative;
+}
+
+html,body {
+	width: 100%;
+	overflow-x: hidden;
+}
+
+hr{
+  background-color: #55acee;
+}
+
+h1,h2,h3,h4 {
+	font-weight: bold;
+}
+
+.heading {
+	font-size: 60px;
+  color:white;
+
+}
+.subheading {
+	font-size: 14px;
+	font-weight: bold;
+	padding-bottom: 60px;
+}
+.bold {
+	font-weight: bold;
+  padding-left: 10px;
+  padding-right:10px;
+}
+
+p {
+	letter-spacing: 0px;
+	line-height: 28px;
+}
+
+#about,
+#team, #contact {
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+#about .fa {
+	font-size: 28px;
+	min-width: 34px;
+  margin-left: 140px;
+}
+
+
+
+
+/* Adjust logo positioning */
+.navbar-header .logo img {
+  height: 20px;
+  width: auto;
+  margin-left:20px;
+}
+
+/* Navbar background */
+.custom-navbar {
+  background-color: rgb(128, 128, 128);
+  padding: 10px 15px;
+  
+}
+
+.custom-navbar {
+   background-color: gray;
+   margin-bottom: 0;
+    
+  
+}
+.custom-navbar .navbar-brand  {
+	color: #360505;
+	font-size: 40px;
+}
+.custom-navbar .navbar-brand .navbar-toggle {
+  background: linear-gradient(to right, #05ad97, #015d69);
+    padding: 4px 6px;
+    font-size: 16px;
+    color: #fff;
+}
+.custom-navbar {
+  background-color: rgb(46, 46, 46);
+}
+.nav li a {
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-top:8px;
+	  transition: all 0.3s ease-in-out;
+}
+.custom-navbar .nav li a:hover {
+    background: #3af7dd;
+  	transition: all 0.3s ease-in-out;
+    border-radius: 50px;
+}
+
+.custom-navbar .nav li.active > a {
+    background: #3af7dd;
+    border-radius: 50px;
+}
+.custom-navbar .navbar-toggle {
+    border: none;
+    padding-top: 10px;
+}
+.custom-navbar .navbar-toggle .icon-bar {
+
+    border-color: transparent;
+      margin-left: 0px;
+    }
+  
+  .custom-navbar .navbar-toggle:focus,
+.custom-navbar .navbar-toggle:active {
+    outline: none; /* Remove the focus outline */
+    box-shadow: none; /* Remove any shadow */
+    background: none; /* Remove any background highlight */
+}
+
+.custom-navbar .navbar-toggle {
+  border: none;
+  padding-top: 100px;
+  position: absolute;
+  right: -337px; /* Moves the menu icon to the right */
+  top: 10px; /* Adjusts vertical positioning */
+ 
+}
+/* Increase the size of the menu icon */
+.custom-navbar .navbar-toggle .icon-bar {
+  background: #3af7dd; /* Color of the bars */
+  height: 6px; /* Increase the thickness of the bars */
+  width: 35px; /* Increase the width of the bars */
+  margin: 5px 0; /* Adjust the spacing between the bars */
+}
+
+/* You can also adjust the overall size of the navbar toggle */
+.custom-navbar .navbar-toggle {
+  padding: 10px; /* Adjust padding to increase the clickable area */
+  font-size: 35px; /* Adjust the font-size to make the icon itself larger */
+}
+
+.dropdown-menu li a{
+  color:#000;
+}
+.navbar .dropdown-menu {
+  z-index: 9999; /* Ensure dropdown menu appears on top */
+
+}
+.navbar-collapse {
+  overflow: visible;
+}
+@media (max-width: 767px) {
+  .navbar .dropdown-menu {
+    position: static;
+    float: none;
+    width: 100%;
+
+   
+  }
+}
+.navbar-toggler-icon {
+  font-size: 24px; /* Adjust the size of the icon */
+  color: white;    /* Adjust the color to match your theme */
+}
+
+
+.navbar-toggle:focus {
+  outline: none;
+  box-shadow: none;
+}
+.custom-navbar .navbar-toggle {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-focus-ring-color: transparent;
+  outline: none;
+  box-shadow: none;
+}
+.custom-navbar .navbar-toggle:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  background: none !important;
+}
+.navbar-toggler:focus,
+.navbar-toggler:focus-visible,
+.navbar-toggler:active,
+.navbar-toggler:focus:not(:focus-visible) {
+  outline: none !important;
+  box-shadow: none !important;
+  background: transparent !important;
+}
+
+
+@media(min-width:768px){
+    .custom-navbar {
+            background: #ffffff;
+            padding: 14px;
+            border-bottom: 0;
+            background: 0 0;
+
+         }
+    .custom-navbar.top-nav-collapse {
+          
+            background: rgb(82, 81, 81);
+            border-bottom:  #eeeeee;
+            height: 100px;
+        }
+    
+}
+.navbar-toggler-icon {
+  background-image: none !important;
+}
+
+.navbar-toggler {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  -webkit-tap-highlight-color: transparent;
+}
+
+
+/* home section */
+#home {
+  position: relative; /* Needed for the overlay */
+  background: url('../images/pexels-photo-5725589.webp') no-repeat center;
+  background-size: cover;  
+  background-position: center bottom; 
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+/* Dark overlay */
+#home::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8); /* Adjust darkness here */
+  z-index: 1;
+}
+
+/* Ensures content stays on top of the overlay */
+#home > * {
+  position: relative;
+  z-index: 2;
+}
+
+
+#navbar-toggle {
+  background-color: none !important;
+}
+
+.navbar-header .logo img {
+  height: 75px;  
+  width: auto;  
+  opacity: 95%;
+  border-radius: 90px;
+}
+
+
+#home span{
+  color:#3af7dd;
+}
+#home hr {
+  border: 2px solid #3af7dd;
+  width: 100px;
+}
+#home h3 {
+  letter-spacing: 2px;
+  color: #3af7dd;
+}
+#home .btn {
+  background: #3af7dd;
+  border-radius: 20px;
+  border: 2px solid #050000;
+  color: black;
+  font-weight: bold;
+  padding: 16px 50px;
+  margin-top: 40px;
+  font-size: 20px;
+  transition: all 0.3s ease;
+  box-shadow: 0 12px 0 #050000, 0 10px 15px rgba(0, 0, 0, 0.3);
+  position: relative;
+  transform: perspective(1000px) translateZ(0);
+}
+
+/* Hover effect */
+#home .btn:hover {
+  transform: translateY(-8px) scale(1.08);
+  box-shadow: 0 18px 0 #050000, 0 20px 25px rgba(0, 0, 0, 0.4), 0 0 30px #3af7dd;
+  background: #3af7dd; /* Keep background same */
+  border-color: #000;
+}
+ 
+
+/* about section */
+
+#about {
+  position: relative; /* Required for pseudo-element */
+  background: url('../images/photo-1604339754741-0867bb43a511.avif') no-repeat center;
+  background-size: cover;
+  background-position: center bottom;
+  background-attachment: fixed;
+  color:white;
+  font-size:20px;
+}
+
+/* Dark overlay */
+#about::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* Adjust the opacity (0.6 = 60% dark) */
+  z-index: 1;
+}
+.subheading{
+  color:white;
+}
+.about-headings{
+  color:white;
+}
+
+/* Ensure content is above the overlay */
+#about * {
+  position: relative;
+  z-index: 2;
+}
+.img-responsive{
+  border-radius: 300px;
+  margin-top:50px;
+  margin-right:150px;
+}
+
+#about .col-md-4 .fa {
+  background: #3af7dd;
+  border-radius: 50%;
+  color: #ffffff;
+  font-size: 32px;
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+
+#about .col-md-6 {
+  padding-top: 60px;
+}
+#about .col-md-6 h3 {
+  padding-top: 40px;
+  padding-bottom: 10px;
+}
+#about .col-md-6 p {
+  padding-bottom: 30px;
+}
+#about span {
+  display: block;
+  padding-bottom: 6px;
+}
+
+
+
+
+
+
+  /* Animation for the h3 element */
+/* H3 will slide in from the left */
+#home h3 {
+  opacity: 0;
+  transform: translateX(-100%);  /* Start from the left side (off-screen) */
+  animation: slideInLeft 1.5s ease-out forwards;
+  animation-delay: 0.5s;  /* Delays the appearance slightly */
+}
+
+/* H1 will slide in from the right */
+#home h1 {
+  opacity: 0;
+  transform: translateX(100%);  /* Start from the right side (off-screen) */
+  animation: slideInRight 1.5s ease-out forwards;
+  animation-delay: 1s;  /* Delays the appearance slightly */
+
+}
+
+/* Button will fade in and slide up from below after h3 and h1 animations */
+#home .btn {
+  opacity: 0;
+  transform: translateY(50px);  /* Start from below */
+  animation: fadeInMoveUp 1.5s ease-out forwards, bounce 1.5s ease-in-out infinite;
+  animation-delay: 2s;  /* Wait until h3 and h1 animations are complete */
+  border-radius: 100px;
+}
+@media (min-width:767px){
+  #home .btn{
+    padding-left:10px;
+    padding-right:10px;
+  }
+}
+
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);  /* Start from the left */
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);  /* Move to the normal position */
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);  /* Start from the right */
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);  /* Move to the normal position */
+  }
+}
+
+@keyframes fadeInMoveUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);  /* Start below the original position */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);  /* Move to the normal position */
+  }
+}
+
+/* Bouncing effect for the button */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);  /* Initial position */
+  }
+  50% {
+    transform: translateY(-10px);  /* Move up */
+  }
+}
+
+
+/* contact section */
+
+/* General Section Styling */
+/* Contact Section */
+#contact {
+  padding: 50px 0;
+  background-color:grey; /* Light Grey Background */
+  text-align: center;
+  color:white;
+  margin-top:50px;
+}
+
+/* Headings */
+#contact .heading {
+  font-size: 36px;
+  color: white;
+  
+}
+#contact {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.container {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+#contact .subheading {
+  font-size: 25px;
+  color: white;
+  margin-bottom: 5px;
+  font-weight: 300;
+}
+
+/* Contact Form */
+input, textarea {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s ease, background 0.3s ease;
+}
+
+input:focus, textarea:focus {
+  border-color: #3af7dd;
+  background-color: #f8f8f8;
+  outline: none;
+}
+
+/* Submit Button */
+.btn-primary {
+  background-color: #3af7dd;
+  color: #fff;
+  font-size: 18px;
+  border: none;
+  padding: 15px 30px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-primary:hover {
+  background-color: #28a745;
+  transform: scale(1.05);
+}
+
+/* Responsive Styling */
+@media (max-width: 767px) {
+  .col-md-6 {
+    width: 100%;
+  }
+  #home .btn {
+  background: #3af7dd;
+  border-radius: 100px;
+  border: 2px solid #050000;
+  color: black;
+  font-weight: bold;
+  padding: 16px 50px;
+  margin-top: 40px;
+  font-size: 22px;
+  transition: all 0.3s ease;
+  box-shadow: 0 12px 0 #050000, 0 10px 15px rgba(0, 0, 0, 0.3);
+  position: relative;
+  transform: perspective(1000px) translateZ(0);
+}
+}
+
+
+/* footer section */
+/* Footer Section Styles */
+footer {
+
+  color: #fff;
+  background-color: #333; /* Adjust this if you have a custom background */
+}
+
+
+
+
+footer .social-icon {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+  margin-top:20px
+}
+
+footer .social-icon li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+footer .social-icon a {
+  color: #fff;
+  font-size: 24px;
+  transition: color 0.3s ease;
+}
+
+footer .social-icon a:hover {
+  color: #ff7f50; /* Adjust the hover color as needed */
+}
+
+footer .footer-text {
+  font-size: 16px;
+  margin-top: 10px;
+  text-align: left;
+}
+
+
+footer .footer-links li {
+  display: inline-block;
+  margin-left: 15px;
+}
+
+footer .footer-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+footer .footer-links a:hover {
+  color: #ff7f50; /* Adjust the hover color as needed */
+}
+
+/* Copyright Section Styles */
+#copyright {
+  background-color: #222; /* Slightly darker background for the copyright section */
+  padding: 20px 0;
+}
+
+#copyright p {
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  margin: 0;
+}
+
+#copyright a {
+  color: #ff7f50;
+  font-size: 18px;
+  text-decoration: none;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+#copyright a:hover {
+  color: #fff;
+}
+
+/* copyright section */
+#copyright {
+  background: #404040;
+  color: #ffffff;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+#copyright p {
+  padding-top: 20px;
+}
+#copyright a {
+	color: #fff;
+}
+#copyright a:hover {
+	color: #fffef9;
+	text-decoration: none;
+	transition: all 0.4s ease-in-out;
+}
+#copyright .fa {
+  background: #383838;
+  color: #ffffff;
+  font-size: 18px;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  transition: all 0.4s ease-in-out;
+}
+#copyright .fa:hover {
+  background: #ecece9;
+  color: #000;
+}
+.divider {
+  margin-top: 70px;
+  border-bottom: 6px solid #3af7dd;; /* Golden line */
+  width: 50%; /* Make the line 50% of the page width */
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+.divider:before {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, rgba(243, 156, 18, 0) 0%, #3af7dd;50%, rgba(243, 156, 18, 0) 100%);
+}
+
+
+@media screen and (min-width: 992px) {
+  @-moz-document url-prefix() {
+    #portfolio .col-lg-4,
+    #portfolio .col-md-4 {
+      width: 33.333%;
+    }
+  }    
+}
+
+@media ( max-width: 980px ) {
+  .custom-navbar .navbar-brand {
+    font-size: 24px;
+  }
+  #about img {
+    margin-top: 40px;
+    border-radius:200px;
+  }
+  #contact form {
+    padding-top: 30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .contact-info-box { margin-bottom: 20px; }
+  .contact-info-box:last-child { margin-bottom: 0; }
+  .package-card{
+    font-size: 20px;
+  }
+#margin p{
+  font-size:20px;
+ }
+.package-card h3 {
+    color: #ff5733; /* Change text color */
+    font-size: 24px; /* Adjust font size */
+    font-weight: bold; /* Make text bold */
+    text-transform: uppercase; /* Uppercase text */
+}
+}
+
+@media (max-width: 767px) {
+  .heading {
+    font-size: 40px;
+  }
+  #about .col-md-4 .fa {
+    margin-top: 32px;
+    margin-left: 135px;
+   
+  }
+  #contact h3 {
+    font-size: 16px;
+    padding-bottom: 40px;
+  } 
+
+  #contact{
+    padding-left:20px;
+    padding-bottom:100px;
+  }
+  #about{
+    padding-left:30px;
+  }
+    
+  }
+
+
+
+/* Multi-Step Form Container */
+#multi-step-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px;
+  background: url('../images/footer-bg.jpg') no-repeat; /* Replace with your image URL */
+  background-size: cover; /* Ensures the image covers the entire section */
+  background-position: center; /* Adjusts the image position */
+  background-repeat: no-repeat; /* Prevents repeating the image */
+  padding: 50px 0;
+  position: relative;
+}
+
+.form-container {
+  width: 100%;
+  max-width: 600px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.5s ease-in-out forwards;
+}
+
+/* Form Steps */
+.step {
+  display: none;
+}
+
+.step.active {
+  display: block;
+}
+
+/* Headings */
+h2, h3 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 15px;
+  
+}
+
+/* Labels & Inputs */
+label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #555;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  transition: 0.3s ease-in-out;
+}
+
+input:focus, select:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Button Group */
+button {
+  background: #007bff;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  width: 100%;
+  margin-top: 15px;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #3af7dd;
+}
+
+button.prev {
+  background: #6c757d;
+}
+
+button.prev:hover {
+  background-color: #3af7dd;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Adds spacing between the input and text */
+  background: #f9f9f9;
+  padding: 10px;
+  border-radius: 8px;
+  margin-top: 5px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+label input[type="radio"], 
+label input[type="checkbox"] {
+  margin: 0;
+  width: 16px;
+  height: 16px;
+  accent-color: #007bff; /* Changes the color of the selected radio/checkbox */
+}
+
+/* Ensure text is aligned properly */
+label span {
+  flex: 1;
+}
+
+label:hover {
+  background: #e0f0ff;
+  transform: scale(1.02);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .form-container {
+      width: 90%;
+  }
+
+  .img-responsive{
+    width:500px;
+    border-radius:100px;
+  }
+  
+  
+  label {
+      font-size: 14px;
+      padding: 8px;
+  }
+  
+  button {
+      font-size: 14px;
+      padding: 10px;
+  }
+  .col-lg-4 .fa,.about-headings{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Animation */
+@keyframes fadeInUp {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+
+   
+
+#margin img{
+ border-radius:50px;
+
+}
+
+.extraline{
+  color:transparent;
+}
+.package-card {
+  color: white;
+  border-radius: 12px;
+  padding: 30px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+
+  overflow: hidden;
+}
+.package-card h2{
+  color:white;
+}
+.package-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.blue-card {
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+}
+.purple-card {
+  background: linear-gradient(135deg, #4b0082, #800080);
+}
+.includes-list {
+  list-style: none;
+  padding: 0;
+}
+.includes-list li {
+  padding: 5px 0;
+  display: flex;
+  align-items: center;
+}
+.includes-list li::before {
+  content: "✔";
+  margin-right: 10px;
+  color: #ffd700;
+}
+.btn-custom {
+  width: 100%;
+  margin-top: 10px;
+}
+
+
+.package-card {
+  width: 100%;
+  min-height: 250px; /* Ensure all cards have the same height */
+  padding: 20px;
+  margin: 15px 0; /* Add spacing between the cards */
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Distribute content evenly */
+  align-items: center;
+}
+
+.package-card h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: white;
+}
+
+.btn-custom {
+  width: 80%;
+  margin-top: 10px;
+}
+
+.purple-card {
+  background-color: #6a0dad;
+  color: white;
+}
+
+.blue-card {
+  background-color: #007bff;
+  color: white;
+}
+
+@media (min-width: 768px) {
+  .package-card {
+      margin: 10px;
+  }
+}
+
+
+
+#Shop {
+  background: linear-gradient(to right, #000000, #333333); /* Black to Dark Gray */
+  background-size: cover;  
+  background-position: center bottom; }
+
+.package-card {
+  width: 100%;
+  height: 100%; /* Ensure all cards are the same height */
+  padding: 20px;
+  margin: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box; /* Make sure padding and margins are considered in the height/width calculation */
+  color: white; /* Ensure text color is white for contrast */
+}
+
+.package-card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.package-card p {
+  font-size: 14px;
+  margin-bottom: 15px;
+  padding: 0 10px;
+}
+
+.btn-custom {
+  width: 80%;
+  margin-top: 10px;
+}
+
+.dark-blue-card {
+  background-color: #003366; /* Dark Blue */
+}
+
+.dark-red-card {
+  background-color: #8B0000; /* Dark Red */
+}
+
+@media (min-width: 768px) {
+  .package-card {
+      margin: 10px;
+  }
+}
+
+.package-card h3,
+.package-card p {
+    color: white;
+}
+
+.heed{
+  color:white;
+}
+
+
+.hed{
+  color:white;
+  margin-top:70px;
+  font-size: 50px;
+  font-weight:bolder;
+}
+#hed{
+  color:white;
+  font-size: 30px;
+  font-weight: 900;
+  margin:50px;
+}
+
+.package-card {
+     background: linear-gradient(to right, #05ad97, #015d69);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  min-height: 350px; /* Ensure all cards have the same height */
+  margin-bottom: 20px;
+}
+
+.package-card img {
+  width: 100%;
+  height: auto;
+  max-height: 250px;
+  object-fit: cover;
+}
+
+.package-card h3, .package-card p {
+  margin-bottom: 15px;
+}
+
+.package-card .btn {
+  margin-top: 10px;
+}
+
+
+
+
+.package-card {
+    min-height: 350px; /* Adjust the value as needed */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.package-card img {
+    height: 200px; /* Optional: Adjust image size to ensure uniformity */
+    object-fit: cover; /* Ensure images cover the space without distortion */
+}
+
+
+
+.custom-card {
+  background-color: #87CEEB;
+  color: white;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+.custom-card:hover {
+  transform: translateY(-5px);
+}
+
+@media (min-width:767){
+  .floating-img{
+    padding-right:80px;
+  }
+}
+@media (max-width: 767px) {
+  /* Your mobile-specific styles go here */
+.container{
+  margin-right: 30px;
+}
+#hed{
+  font-size: 20px;
+  line-height:35px;
+  padding-left: 20px;
+}
+.ourfocus{
+line-height: 35px;
+padding-left: 20px;
+}
+.hed{
+  margin-left: 30px;
+}
+
+.heed{
+  font-size:42px;
+  color:white;
+}
+}
+.cta-button {
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 22px;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(135deg, #1d2d2e, #8B0000);
+  border-radius: 8px;
+  text-decoration: none;
+  text-align: center;
+  transition: transform 0.2s ease-in-out, box-shadow 0.3s ease-in-out;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.cta-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+}
+
+.container{
+  padding:0px;
+}
+
+.btn-another{
+  background-color: #28a745;
+  color:#fff;
+  width:100px;
+  border-radius: 100px;
+  padding:10px;
+  text-decoration: none;
+}
+.btn-another:hover{
+  text-decoration: none;
+}
+#select {
+  border-radius: 50px;
+  font-size: 25px;
+  font-weight: bold;
+  background-color: rgb(196, 121, 24); /* Original button color */
+  color: white; /* Text color */
+  padding: 10px 20px;
+  border: none; /* Remove default border */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions for hover effects */
+}
+
+/* Hover effect for button */
+#select:hover {
+  background-color: rgb(230, 145, 38); /* Lighter shade on hover */
+  transform: scale(1.05); /* Slight scaling effect */
+}
+
+/* Focus effect for accessibility */
+#select:focus {
+  outline: none; /* Remove default focus outline */
+  border: 2px solid #f1c40f; /* Yellow border on focus */
+}
+#margin{
+  border-radius: 50px;
+}
+/* Basic styling for the image */
+.floating-img {
+  width: 100%;
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+  animation: floatUpDown 4s infinite ease-in-out; /* Shorter duration for a smoother effect */
+  /* Optional: Add rounded corners */
+  position: relative;
+}
+
+/* Animation to make the image float up and down */
+@keyframes floatUpDown {
+  0% {
+    transform: translateY(0); /* Start at the normal position */
+  }
+  50% {
+    transform: translateY(-70px); /* Move up */
+  }
+  100% {
+    transform: translateY(0); /* Return to the original position */
+  }
+}
+
+#disc{
+  color:#fff;
+  font-size:22px;
+  line-height:32px;
+  margin-bottom:80px;
+}
+#space{
+  margin-bottom:80px;
+}
+#disc{
+  font-size:18px;
+  padding-left: 20px;
+  padding-right:20px;
+}
+.navbar-close {
+    font-size: 30px;
+    cursor: pointer;
+    color: #3af7dd;;
+    position: absolute;
+    top: 18px;
+    right: 40px;
+    z-index: 999;
+    display: none;
+    height: 6px;
+    width: 35px;
+    margin: 5px 0;
+  }
+
+  .navbar-toggle {
+    z-index: 9999; /* Ensures the hamburger icon is on top */
+  }
+
+  .navbar-toggle .icon-bar {
+    background-color: #000;
+  }
+  @media (max-width: 1024px) {
+  .nav li a {
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 0px;
+    margin-top: 10px;
+    transition: all 0.3s ease-in-out;
+  }
+}
+</style>
+<body data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
+
+<!-- navigation section -->
+
+<section data-aos="fade-up" data-aos-duration="1800" class="navbar navbar-fixed-top custom-navbar" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <a href="#home" class="logo">
+        <img src="images/WhatsApp Image 2025-02-22 at 05.59.37_33b255a3.jpg" alt="Logo">
+      </a>
+      <!-- Menu Toggle (Hamburger Icon) -->
+      <button class="navbar-toggle" id="navbar-toggle">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      <!-- Close Icon for Navbar (X Icon) -->
+      <div id="navbar-close" class="navbar-close" style="display: none;">
+        <span>&#10006;</span> <!-- Close sign (×) -->
+      </div>
+    </div>
+
+    <!-- Collapsible Menu -->
+    <div class="collapse navbar-collapse" id="navbar-menu">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#home" class="smoothScroll">HOME</a></li>
+        <li><a href="#about" class="smoothScroll">ABOUT US</a></li>
+        <li><a href="#Shop" class="smoothScroll">SHOP</a></li>
+        <li><a href="#contact" class="smoothScroll">CONTACT US</a></li>
+        <li><a href="TEFL.html">GET TEFL</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">TEACH ABROAD<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="china.html">teach china</a></li>
+            <li><a href="Korea.html">teach korea</a></li>
+            <li><a href="Apply.html">Where to apply</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">RESOURCES<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="resources.html">Helpul sites and Tools</a></li>
+            <li><a href="crafts.html">Crafts and activities</a></li>
+            <li><a href="Flashcards.html">Flashcards</a></li>
+          </ul>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+<script>
+  const navbarMenu = document.getElementById('navbar-menu');
+  const navbarClose = document.getElementById('navbar-close');
+  const navbarToggle = document.getElementById('navbar-toggle');
+  const iconBars = navbarToggle.querySelectorAll('.icon-bar');
+
+  let menuOpen = false;
+
+  function openMenu() {
+    navbarMenu.classList.add('in');
+    navbarClose.style.display = 'block';
+    iconBars.forEach(bar => bar.style.display = 'none');
+    menuOpen = true;
+  }
+
+  function closeMenu() {
+    navbarMenu.classList.remove('in');
+    navbarClose.style.display = 'none';
+    iconBars.forEach(bar => bar.style.display = 'block');
+
+    // Also close any dropdowns
+    const dropdowns = navbarMenu.querySelectorAll('.dropdown.open');
+    dropdowns.forEach(dropdown => dropdown.classList.remove('open'));
+
+    menuOpen = false;
+    navbarToggle.blur();
+  }
+
+  navbarToggle.addEventListener('click', function () {
+    if (menuOpen) {
+      closeMenu();
+    } else {
+      openMenu();
+    }
+  });
+
+  navbarClose.addEventListener('click', function () {
+    closeMenu();
+  });
+
+  // ✅ Updated: Only close menu when clicking on regular links (not dropdown toggles)
+  const navLinks = navbarMenu.querySelectorAll('a');
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      if (!link.classList.contains('dropdown-toggle') && menuOpen) {
+        closeMenu();
+      }
+    });
+  });
+</script>
+
+
+
+
+<section id="home">
+  <div class="container2">
+      <div class="row">
+          <div class="col-md-12 col-sm-12">
+              <hr>
+              <h3 class="bold">Welcome to Road to ESLing</h3>
+              <h1 class="heading">
+                  <span id="typing-text"></span>
+              </h1>
+              <a href="#Shop" class="smoothScroll btn btn-default bounce-text">
+                  Teach abroad today <i class="fa-solid fa-arrow-right"></i>
+              </a>      
+          </div>
+      </div>
+  </div>      
+</section>
+
+<!-- about section -->
+<section id="about" class="application-heading">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-12 text-center">
+                <h1 class="heading bold"  data-aos="fade-up" data-aos-delay="300">ABOUT US</h1>
+                <h2 class="subheading"  data-aos="fade-up" data-aos-delay="300">WE ARE COMMITTED TO HELPING YOU FAST-TRACK YOUR TEACHING JOURNEY</h2>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 wow fadeInUp" data-wow-delay="0.6s"   data-aos="fade-up" data-aos-delay="300">
+                <i class="fa fa-headset"></i> <!-- Replaced with headset for support -->
+                <h3 class="about-headings">Support</h3>
+                <p>At Road to ESLing, we specialize in equipping educators with the knowledge, skills, and resources needed to transition into international teaching roles, with a strong focus on opportunities abroad.</p>    
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 wow fadeInUp" data-wow-delay="0.9s"  data-aos="fade-up" data-aos-delay="300">
+                <i class="fa fa-clipboard-list"></i> <!-- Replaced with clipboard for guidance -->
+                <h3 class="about-headings">Guidance</h3>
+                <p>Whether you're seeking comprehensive guidance on finding the right teaching opportunities abroad, we offer tailored support to help you succeed.</p>
+            </div>
+            <div id="Assistance" class="col-lg-4 col-md-4 col-sm-4 wow fadeInUp" data-wow-delay="1s"  data-aos="fade-up" data-aos-delay="300">
+                <i class="fa fa-briefcase"></i> <!-- Replaced with briefcase for assistance -->
+                <h3 class="about-headings">Assistance</h3>
+                <p>We offer a range of packages designed to meet your unique needs, whether you're just starting to explore teaching abroad or you're ready to dive into a specific teaching opportunity. Our packages are flexible and customizable, ensuring that you receive the right level of support at every stage of your journey.</p>
+            </div>
+            
+            
+            <div class="col-md-6 col-sm-6 wow fadeInUp" data-wow-delay="0.6s" data-aos="fade-up" data-aos-delay="300">
+              <img src="images/whatsapp image 2025-02-22 at 05.59.37_33b255a3.jpg" class="img-responsive floating-img" alt="about img">
+          </div>
+            <div class="col-md-6 col-sm-6 wow fadeInUp" data-wow-delay="0.9s"   data-aos="fade-up" data-aos-delay="300">
+                <h3 class="about-headings">Our Focus</h3>
+                <p class="ourfocus">Our primary mission is to empower teachers with the skills, confidence, and resources they need to excel in teaching abroad. We recognize that stepping into a new cultural and educational environment can be both exciting and challenging. 
+                  That’s why we are committed to providing comprehensive support to ensure a smooth and successful transition.
+                    </p>  
+            </div>
+        </div>
+    </div>
+    <div class="divider"></div>
+</section>
+
+<div id="Shop">
+  <div  class="container text-center my-5" >
+      <h1 class="hed"  data-aos="fade-up" data-aos-delay="300">Our Services Packages 
+          <i class="fas fa-briefcase"></i> 
+      </h1>
+      <p id="hed" class="text-muted" data-aos="fade-up" data-aos-delay="300">Interested in teaching abroad? <br> Details...</p>
+  </div>
+
+  <div class="container">
+      <div class="row g-4"  data-aos="fade-up" data-aos-delay="300">
+          <!-- Package 1 -->
+          <div class="col-12 col-md-6 col-lg-3">
+              <div  id="margin" class="package-card blue-card text-center" >
+                  <img src="images/pexels-tima-miroshnichenko-5428254.jpg" alt="Getting Started Package" class="img-fluid mb-3">
+                  <h2> Getting Started</h2>
+                  <p><strong style="font-size: 30px; color: #FFD700;">Free</strong></p>
+                  <p>Ideal for those who need an overview of teaching abroad and want to start their journey.</p>
+                  <h2>Includes:</h2>
+                  <ul>
+                    <li>A guide on the teaching market (job types, salary, and benefits)</li>
+                    <li>Visa process overview and checklist of required documents</li>
+                    <li>Tips on finding reputable teaching jobs</li>
+                    <li>One-on-one Q&A session answering all of your questions</li>
+                    <li>Guidance on cultural adaptation and living abroad</li>
+                    <li class="extraline"></li>
+                    <li  class="extraline"></li>
+                    <li class="extraline"></li>
+                    <li class="extraline"></li>
+                    <li class="extraline"></li>
+                    <li class="extraline"></li>
+                    
+                  </ul>
+                  <a href="details.html" class="btn btn-warning btn-custom select-button" data-package="Getting Started" data-cost="Free" id="select">Select</a>
+
+              </div>
+          </div>
+
+          <!-- Package 2 -->
+          <div class="col-12 col-md-6 col-lg-3" >
+              <div id="margin" class="package-card purple-card text-center">
+                  <img src="images/pexels-photo-5390688.webp" alt="Job Ready Package" class="img-fluid mb-3">
+                  <h2> Job Ready</h3>
+                  <p><strong style="font-size: 30px; color: #FFD700;">R800</strong>/ plan</p>
+                  <p>This package is ideal for those who've started their applications or are ready to, but need expert advice.</p>
+                  <h2>Includes:</h2>
+                  <ul>
+                    <li>All features from the Getting Started package</li>
+                    <li>CV and application review with detailed feedback on areas to improve</li>
+                    <li>Guide on writing Lesson Plans and Essays/CVs</li>
+                    <li>Intro/Demo Video with personalized feedback</li>
+                    <li>Tips and advice for standing out in a competitive job market</li>
+                    <li>Information on where to apply for the best opportunities</li>
+                    <li class="extraline"></li>
+                    <li class="extraline"></li>
+                    <li class="extraline"></li>
+                    <li class="extraline"></li>
+                    <li class="extraline"></li>
+                    <li class="extraline"></li>
+                    <li class="extraline"></li>
+               
+                  </ul>
+                  
+                  <a href="details.html" class="btn btn-warning btn-custom select-button" data-package="Job Ready" data-cost="R800" id="select">Select</a>
+
+
+              </div>
+          </div>
+
+          <!-- Package 3 -->
+          <div class="col-12 col-md-6 col-lg-3">
+              <div id="margin" class="package-card blue-card text-center">
+                  <img src="images/pexels-photo-5905860.webp" alt="Full on ESLing Package" class="img-fluid mb-3">
+                  <h2>Full on ESLing</h2>
+                  <p><strong style="font-size: 30px; color: #FFD700;">R1000</strong>/ plan</p>
+                  <p>This all-inclusive package covers everything you need to apply for a teaching job successfully</p>
+                  <h2>Includes:</h2>
+                  <ul>
+                    <li>All features from the Getting Started and Job Ready packages</li>
+                    <li>Free info seesion</li>                 
+                    <li>CV review</li>  
+                    <li>Lesson planning and personal statement guide</li> 
+                    <li>intro/Demo video feedback</li> 
+                    <li>Tips to make an application standout</li> 
+                    <li>Information on where to apply</li>
+                    <li>Interview Questions and Answers Guide to help you prepare for your interview</li>
+                  <li class="extraline"></li>
+                  <li class="extraline"></li>
+                  <li class="extraline"></li>
+                  <li class="extraline"></li>
+                  <li class="extraline"></li>
+                  <li class="extraline"></li>
+            
+           
+          
+               
+                  </ul>
+                  <a href="details.html" class="btn btn-warning btn-custom select-button" data-package="Full on ESLing" data-cost="R1000" id="select">Select</a>
+
+              </div>
+          </div>
+
+          <!-- Package 4 -->
+          <div class="col-12 col-md-6 col-lg-3">
+              <div   id="margin" class="package-card purple-card text-center">
+                  <img src="images/pexels-photo-7692548.jpeg" alt="EPIK Full On ESLing Package" class="img-fluid mb-3">
+                  <h2>EPIK-Full On ESLing</h2>
+                  <p><strong style="font-size: 30px; color: #FFD700;">R1600</strong>/ plan</p>
+                 <p>This all-inclusive package covers everything you need to apply for a teaching job through Epik. .</p>
+<h2>Includes:</h2>
+<ul>
+  <li>All services from Getting Started and Job Ready: Complete information session, detailed feedback,editing and application support</li>
+  <li>One mock session(1 hour): A stimulated interview with tailored questions to help you practice and refine your responses plus interview Q & A PDF and demo lesson assistance</li>
+  <li>Some go to Teaching ESL resources</li>
+  <li>Interview questions to help you prepare</li>
+  <li>Bonus feature- Essential things to know before moving abroad</li>
+</ul>
+
+<a href="details.html" class="btn btn-warning btn-custom select-button" data-package="EPIK-Full On ESLing" data-cost="R1600" id="select">Select</a>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <p id="hed" class="text-muted text-center"  data-aos="fade-up" data-aos-delay="300">If you are interested in standalone services (targeted assistance from us), please select them here</p>
+
+  <div class="container mt-5">
+      <div class="row justify-content-center"  data-aos="fade-up" data-aos-delay="300">
+          <!-- Standalone Services -->
+          <div class="col-12 col-md-6 col-lg-3">
+              <div  id="margin"class="package-card dark-blue-card text-center">
+                  <img src="images/pexels-divinetechygirl-1181398.jpg" alt="Lesson Plan Assistance" class="img-fluid mb-3">
+                  <h2>Lesson Plan Assistance</h2>
+                  <p><strong style="font-size: 30px; color: #FFD700;">R600</strong> / plan</p>
+                  <p>Recieve expert guidance and feedback on crafting effective and engaging lesson plans tailored to teaching ESL abroad.Perfect for ensuring your plans are impactful and aligned with your teaching goals</p>
+                  <li class="extraline"></li>
+                  <li  class="extraline"></li>
+                  <li class="extraline"></li>
+                  <li class="extraline"></li>
+        
+                  
+                  <a href="details.html" class="btn btn-warning btn-custom select-button" data-package="Lesson Plan assistance" data-cost="R600" id="select">Select</a>
+              </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-3">
+              <div id="margin" class="package-card dark-red-card text-center">
+                  <img src="images/pexels-photo-17450183.webp" alt="Hard Work Assistance" class="img-fluid mb-3">
+                  <h2>Want us to do all the hard work</h2>
+                  <p><strong style="font-size: 30px; color: #FFD700;">R2000</strong> / plan</p>
+                  <p>We'll write the lesson plan and send you the completed product</p>
+                  <li class="extraline"></li>
+                  <li  class="extraline"></li>
+                  <li class="extraline"></li>
+                  <li  class="extraline"></li>
+                  <li class="extraline"></li>
+                  <li  class="extraline"></li>
+                  <li class="extraline"></li>
+                  <li  class="extraline"></li>
+                  <li class="extraline"></li>
+                  <li  class="extraline"></li>
+                  
+                  
+                  <a href="details.html" class="btn btn-warning btn-custom select-button" data-package="Want us to do all the hard work" data-cost="R2000" id="select">Select</a>
+
+              </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-3">
+              <div id="margin" class="package-card dark-blue-card text-center">
+                  <img src="images/pexels-photo-5905860.webp" alt="EPIK Essays Assistance" class="img-fluid mb-3">
+                  <h2>EPIK "Essays" Assistance</h2>
+                  <p><strong style="font-size: 30px; color: #FFD700;">R350</strong> / plan</p>
+                  <p>Get proffesional guidance,feedback and suggestions to enhance your epik essays/personal statements,our detailed reviews help you present your best self, showcasing your qualifications and enthusiasm for teaching abroad</p>
+                  <li class="extraline"></li>
+                  <li class="extraline"></li>
+                  <a href="details.html" class="btn btn-warning btn-custom select-button" data-package="EPIK Essays assistance" data-cost="R350" id="select">Select</a>
+
+              </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-3">
+              <div id="margin" class="package-card dark-red-card text-center">
+                  <img src="images/pexels-gabby-k-9487230.jpg" alt="EPIK Assistance" class="img-fluid mb-3">
+                  <h2>Want us to do all the hard work</h2>
+                  <p><strong style="font-size: 30px; color: #FFD700;">R750</strong> / plan</p>
+                 <p>We'll Write EPIK essays for you and send you the completed product</p>
+                 <li class="extraline"></li>
+                 <li  class="extraline"></li>
+                 <li class="extraline"></li>
+                 <li  class="extraline"></li>
+                 <li class="extraline"></li>
+                 <li  class="extraline"></li>
+                 <li class="extraline"></li>
+                 <li  class="extraline"></li>
+                 <li class="extraline"></li>
+                 <li class="extraline"></li>
+                 <a href="details.html" class="btn btn-warning btn-custom select-button" data-package="Want us to do all the hard work" data-cost="R1000" id="select">Select</a>
+              </div>
+          </div>
+      </div>
+  </div>
+
+ 
+  <div class="container mt-5">
+    <div class="row justify-content-center"  data-aos="fade-up" data-aos-delay="300">
+        <!-- Standalone Services -->
+        <div class="col-12 col-md-6 col-lg-3">
+            <div id="margin" class="package-card dark-blue-card text-center">
+                <img src="images/pexels-photo-9489915.webp" alt="Lesson Plan Assistance" class="img-fluid mb-3">
+                <h2>Video review and feedback</h2>
+                <p><strong style="font-size: 30px; color: #FFD700;">R100</strong> / plan</p>
+                <p> Submit your teaching demo videos or introduction clips for a thorough review,We offer constructive feedback to refine your presentation and teaching style,increasing your chances of making a great impression.(We do offer editing services and an additional fee.Contact us for more info)</p>
+                <li class="extraline"></li>
+                
+                <a href="details.html" class="btn btn-warning btn-custom select-button" data-package="Video review and feed back" data-cost="R100" id="select">Select</a>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-3">
+            <div id="margin" class="package-card dark-red-card text-center">
+                <img src="images/pexels-yankrukov-8617943.jpg" alt="Hard Work Assistance" class="img-fluid mb-3">
+                <h2>Interview Preperation</h2>
+                <p><strong style="font-size: 30px; color: #FFD700;">R650</strong> / plan</p>
+                <p>Prepare for success with our comprehensive interviews and demo lesson preperation.We provide valuable insights and practice to boost your confidence and performance during actual interviews.</p>
+                <li class="extraline"></li>
+                <li  class="extraline"></li> 
+                <li  class="extraline"></li>
+                <li class="extraline"></li>
+                <li  class="extraline"></li>
+                <li class="extraline"></li>
+                <a href="details.html" class="btn btn-warning btn-custom select-button" data-package="Interview Preperation" data-cost="R650" id="select">Select</a>
+            </div>
+        </div>
+
+   
+
+        <div class="col-12 col-md-6 col-lg-3">
+            <div id="margin" class="package-card dark-red-card text-center">
+                <img src="images/pexels-gabby-k-9487230.jpg" alt="EPIK Assistance" class="img-fluid mb-3">
+                <h3>Guidance on putting together your CV for ESL teaching</h3>
+                <p><strong style="font-size: 30px; color: #FFD700;">Free</strong> </p>
+                <li class="extraline"></li>
+                <li  class="extraline"></li>
+                <li class="extraline"></li>
+                <li  class="extraline"></li>
+                <li class="extraline"></li>
+                <li  class="extraline"></li>
+                <li class="extraline"></li>
+                <li  class="extraline"></li>
+                <li class="extraline"></li>
+                <li  class="extraline"></li>
+                <li class="extraline"></li>
+                <li  class="extraline"></li>
+                <li class="extraline"></li>
+                <li  class="extraline"></li>
+                <li class="extraline"></li>
+                <li  class="extraline"></li>
+                <li class="extraline"></li>
+                <li class="extraline"></li>
+                <a href="details.html" class="btn btn-warning btn-custom select-button" data-package="Guidance on putting together your CV for ESL teaching" data-cost="Free" id="select">Select</a>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="divider"  class="text-muted text-center" data-aos="fade-up" data-aos-delay="300"></div>
+<h1 id="hed" class="text-muted text-center" data-aos="fade-up" data-aos-delay="300">Digital resource suite</h1>
+<h4 id="hed" class="text-muted text-center" data-aos="fade-up" data-aos-delay="300">Your EPIK Application made easy - Get Hired, not stressed</h4>
+<p id="disc" class="text-muted text-center" data-aos="fade-up" data-aos-delay="300">Ready to teach english in South Korea but stuck on the lesson plan, interview prep, or essays? I've got you! The road to Esling Digital resource Suite is designed specifically for applicants who want to apply to the EPIK program with confidence and clarity. These ready-to-use
+   digital resources are packed with real strategies, templates and examples to guide you through each step of the application process.No more guesswork-just focused, actionable content.</p>
+
+<div id="space" class="divider" class="text-muted text-center" data-aos="fade-up" data-aos-delay="300"></div>
+<div class="container">
+  <div class="row g-4"  data-aos="fade-up" data-aos-delay="300">
+      <!-- Package 1 -->
+      <div class="col-12 col-md-6 col-lg-3">
+          <div  id="margin" class="package-card blue-card text-center" >
+              <img src="images/pexels-gabby-k-9487230.jpg" alt="Getting Started Package" class="img-fluid mb-3">
+              <h2>EPIK Lesson plan Guide</h2>
+              <p><strong style="font-size: 30px; color: #FFD700;">R350</strong>/ plan</p>
+              <p>EPIK Lesson plan success kit: Plan Polish, Present!</p>
+              <h2>Includes:</h2>
+              <ul>
+                <li>Step by step guide for creating an Epik-worthy lesson plan</li>
+                <li>Lesson topic ideas tailored for EPIK applicants</li>
+                <li>A complete example lesson plan</li>
+                <li>Classroom tips and cultural do's/don'ts</li>
+                <li>Editable template + printable PDF guide</li>
+                <li class="extraline"></li>
+                <li class="extraline"></li>
+                <li class="extraline"></li>
+                <li class="extraline"></li>
+              </ul>
+              <h2>Targeted value:</h2>
+              <p>shows applicants exactly what to do-removes guesswork and anxiety</p>
+              <a href="details.html" class="btn btn-warning btn-custom select-button" data-package="EPIK Lesson plan Guide" data-cost="R350" id="select">Select</a>
+
+
+          </div>
+      </div>
+
+      <!-- Package 2 -->
+      <div class="col-12 col-md-6 col-lg-3" >
+          <div id="margin" class="package-card purple-card text-center">
+              <img src="images/pexels-photo-5390688.webp" alt="Job Ready Package" class="img-fluid mb-3">
+              <h2> EPIK "Essays" Writing guide</h3>
+              <p><strong style="font-size: 30px; color: #FFD700;">R250</strong>/ plan</p>
+              <p>Write your way in:EPIK short answer writing guide</p>
+              <h2>Includes:</h2>
+              <ul>
+                <li>Breakdown of each of the 6 official EPIK application questions</li>
+                <li>Word count tips and structuring advice</li>
+                <li>Guided writing templates for planningyour responses</li>
+                <li>Example responses</li>
+                <li class="extraline"></li>
+                <li class="extraline"></li>
+                <li class="extraline"></li>
+                <li class="extraline"></li>
+                <li class="extraline"></li>
+                <li class="extraline"></li>
+
+              </ul>
+              <h2>Targeted value:</h2>
+              <p>shows applicants exactly what to do-removes guesswork and anxiety</p>
+              <a href="details.html" class="btn btn-warning btn-custom select-button" data-package="EPIK essays writing guide" data-cost="R250" id="select">Select</a>
+
+          </div>
+      </div>
+
+      <!-- Package 3 -->
+      <div class="col-12 col-md-6 col-lg-3">
+          <div id="margin" class="package-card blue-card text-center">
+              <img src="images/pexels-photo-5905860.webp" alt="Full on ESLing Package" class="img-fluid mb-3">
+              <h2>EPIK interview prep workbook</h2>
+              <p><strong style="font-size: 30px; color: #FFD700;">R350</strong>/ plan</p>
+              <p>Ace your EPIK interview:confidence + clarity workbook</p>
+              <h2>Includes:</h2>
+              <ul>
+                <li>Most common interview questions + sample answers</li>
+                <li>Interview questions bank</li>                 
+                <li>Editable practice pages for drafting answers</li>  
+                <li>Interview mindset coaching( culteral etiquette, body language, what to wear, tech)</li> 
+                <li>Demo lesson tips and planning</li> 
+ 
+              </ul>
+              <h2>Targeted value:</h2>
+              <p>Helps applicants show up confidently and prepare like a pro</p>
+              <a href="details.html" class="btn btn-warning btn-custom select-button" data-package="EPIK interview prep workbook" data-cost="R350" id="select">Select</a>
+
+          </div>
+      </div>
+  </div>
+</div>
+
+
+
+
+
+
+  <p id="hed" class="text-muted text-center" data-aos="fade-up" data-aos-delay="300">You've started teaching ESL abroad but need guidance to excel at your job? Let Road to ESLing be your mentor!</p>
+
+  <div class="container d-flex justify-content-center align-items-center min-vh-100" data-aos="fade-up" data-aos-delay="300">
+      <div class="">
+          <div id="select" class="package-card text-center p-5 shadow-lg rounded-4" 
+               style= "
+                      color: white; 
+                      transition: transform 0.3s ease-in-out; 
+                      
+                     
+                      margin-bottom: 50px;">
+              <h2 class="heed">Essential Mentorship Program</h2>
+              <p><strong style="font-size: 30px; color: #ffffff;">R400</strong> per session</p>
+              <div class="d-flex flex-column gap-4 mt-4">
+                  <div class="p-4 bg-white text-dark rounded-3 shadow-sm">
+                      <h3>Session 1: Foundations & Discovering your needs</h3>
+                      <p class="fs-3 mb-0">Focus on understanding your unique challenges as a new teacher and building a Foundational framework for effective ESL teaching</p>
+                  </div>
+                  <div class="p-4 bg-white text-dark rounded-3 shadow-sm">
+                      <h3>Session 2: Hands-on Lesson Planning</h3>
+                      <p class="fs-3 mb-0">Focus on practical application with personalized support to create a ready-to-teach lesson tailored to your specific context</p>
+                  </div>
+              </div>
+
+              <a href="SignUp.html" class="cta-button">Sign Me Up</a>
+
+            </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+  
+	  <!-- Contact Form -->
+	  
+      
+  <section id="contact"  data-aos="fade-up" data-aos-delay="300">
+    <div class="container">
+      <div class="row text-center">
+      <div class="col-md-12">
+        <h1 class="heading bold">CONTACT US</h1>
+        <h2 class="subheading">We'd love to hear from you!</h2>
+        <div class="row">
+          <div class="col-md-12">
+            <form action="https://formsubmit.co/roadtoesling@gmail.com" method="post">
+              <div class="row">
+                <div class="col-md-6">
+                  <input name="name" type="text" class="form-control" placeholder="Your Name" required>
+                  <input name="email" type="email" class="form-control" placeholder="Your Email" required>
+                  <input name="subject" type="text" class="form-control" placeholder="Subject" required>
+                </div>
+                <div class="col-md-6">
+                  <textarea name="message" rows="6" class="form-control" placeholder="Your Message" required></textarea>
+                </div>
+              </div>
+              <input type="hidden" name="_captcha" value="false">
+              <div class="row">
+                <div class="col-md-12 text-center">
+                  <button type="submit" class="btn btn-primary" data-aos="fade-up" data-aos-delay="300">Send Message</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+  
+  
+<!-- footer section -->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-sm-12">
+        <ul class="social-icon">
+          <li>
+            <a href="https://wa.me/27724265346" target="_blank">
+              <i class="fab fa-whatsapp" data-aos="fade-up" data-aos-delay="300"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/roadtoesling" target="_blank">
+              <i class="fab fa-instagram" data-aos="fade-up" data-aos-delay="300"></i>
+            </a>
+          </li>
+        </ul>
+
+        <ul class="footer-links"  data-aos="fade-up" data-aos-delay="300">
+          <li><a href="Terms.html" target="_blank">Terms & Conditions</a></li>
+          <li><a href="Korea.html" target="_blank">Teach Korea</a></li>
+          <li><a href="China.html" target="_blank">Teach China</a></li>
+        </ul>
+
+        <p class="footer-copy"  data-aos="fade-up" data-aos-delay="300">&copy; 2025 Road to ESLing. All rights reserved.</p>
+        
+      </div>
+    </div>
+  </div>
+</footer>
+
+  
+
+<section id="copyright">
+	<div class="container">
+		<div class="row">
+				<a href="#home" class="smoothScroll fa fa-angle-up"></a>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+ 
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+
+<!-- AOS Library -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<!-- Custom Scripts -->
+<script src="js/smoothscroll.js"></script>
+<script src="js/custom.js"></script>
+
+<!-- Initialize AOS -->
+<script>AOS.init();</script>
+
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+    // Initialize AOS
+    AOS.init({
+        once: true,  // Ensure animations only happen once
+        duration: 1000,  // Set duration for animation
+        easing: 'ease-out', // Add easing for smooth effect
+    });
+</script>
+<script src="https://unpkg.com/typewriter-effect@2.18.2/dist/core.js"></script>
+<script src="https://unpkg.com/typewriter-effect@2.18.2/dist/core.js"></script>
+<script>
+    var app = document.getElementById("typing-text");
+
+    var typewriter = new Typewriter(app, {
+        loop: true, // Loop the animation
+        delay: 75,  // Typing speed
+        deleteSpeed: 50 // Speed of backspacing
+    });
+
+    typewriter
+        .typeString('<span style="color: white; padding:1px;">Let us assist you!</span>') // Initial text
+        .pauseFor(1500) // Wait before deleting
+        .deleteChars(4) // Backspace "you!"
+        .pauseFor(500) // Small delay
+        .typeString('<span style="color: white; padding:1px;">you!</span>') // Re-type "you!"
+        .pauseFor(2000) // Wait before repeating
+        .start();
+</script>
+
+<script>
+  // Wait for the DOM to load
+  document.addEventListener("DOMContentLoaded", function () {
+    const buttons = document.querySelectorAll(".select-button");
+
+    buttons.forEach(button => {
+      button.addEventListener("click", function (e) {
+        e.preventDefault(); // Prevent default anchor behavior
+
+        const packageName = encodeURIComponent(this.dataset.package);
+        const packageCost = encodeURIComponent(this.dataset.cost);
+
+        // Redirect with query params
+        window.location.href = `details.html?packageName=${packageName}&packageCost=${packageCost}`;
+      });
+    });
+  });
+</script>
+<script>
+  document.querySelectorAll(".select-button").forEach(button => {
+    button.addEventListener("click", function (e) {
+      e.preventDefault();
+
+      const packageName = encodeURIComponent(this.dataset.package);
+      const packageCost = encodeURIComponent(this.dataset.cost);
+
+      // Redirect to form page with info in the URL
+      window.location.href = `details.html?packageName=${packageName}&packageCost=${packageCost}`;
+    });
+  });
+</script>
+
+</body>
+</html>
